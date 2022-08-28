@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GALLERY</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- <link rel="stylesheet" href="../Fitness/css/style.css"> -->
+  <link rel="stylesheet" href="gallery.css">
+  <script src="https://kit.fontawesome.com/ce6f88462e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <nav id="navbar">
+        <a href="index.html" class="logo">
+            <img src="../Fitness/images/GYM (2).png" alt="">
+        </a>
+        <div>
+            <a href="../index.html" class="navi">Home</a>
+            <a href="../Fitness/fitness.html" class="navi">Fitness</a>
+            <a href="gallery.html" class="navi">Gallery</a>
+            <a href="../store/store.html" class="navi">Store</a>
+        </div>
+
+        <a class="button1" href="./signup/signup.html">Get Fit</a>
+    </nav>
+</header>
+ 
+  <section class="showcase">
+
+    <video src="GALLERY/My Video.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>COME ON WHAT ARE YOU WAITNG FOR ? </h2>
+
+
+      <a href="#">JOIN NOW </a>
+    </div>
+
+  </section>
+
+  <!-- Home page ends -->
+
+
+  <div class="collage">
+    <img src="GALLERY/collage1.jpg" alt="">
+  </div>
+
+  <section class="about" id="about">
+
+
+
+
+
+    <div class="row">
+
+      <div class="image" data-aos="zoom-in">
+        <img class="elon" src="GALLERY/8.jpg" alt="">
+      </div>
+
+      <div class="content" data-aos="fade-left">
+
+        <p>Some people want it to happen, some wish it would happen, others make it happen </p>
+
+      </div>
+
+      <div class="content" data-aos="fade-right">
+
+        <p>No alarm clock needed, my PASSION wakes me</p>
+
+      </div>
+      <div class="image" data-aos="zoom-in">
+        <img class="elon" src="GALLERY/14.jpg" alt="">
+      </div>
+
+
+    </div>
+
+
+
+    <div class="collage equipments">
+      <img src="GALLERY/collage2.jpg" alt="">
+    </div>
+
+  </section>
+
+  <section class="parent">
+
+    <div class="text">
+      <h3>TRANSFORM WITH US </h3>
+    </div> 
+
+    <section class="transform_video"> 
+
+      
+
+      <section id="transform_video1">
+
+        <video width="470" height="255" controls muted loop autoplay>
+
+             <source src="GALLERY/transform1.mp4" type="video/mp4" >
+         </video>
+
+
+    </section>
+
+    <section id="transform_video2">
+
+        
+           <video width="420" height="240" controls muted loop autoplay>
+
+                <source src="GALLERY/transform2.mp4" type="video/mp4" >
+
+           </video> 
+
+    </section>
+
+
+     </section>
+
+  </section>
+
+    
+  <header class="mobile-nav">
+    <nav>
+        <ul>
+            <li>
+                <span>
+                    <a href="../index.html">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <a href="../Fitness/fitness.html">
+                        <i class="fas fa-dumbbell"></i>
+                    </a>
+                </span>
+            </li>
+
+            <li>
+                <span>
+                    <a href="gallery.html">
+                        <i class="fas fa-photo-video"></i>
+                    </a>
+                </span>
+            </li>
+
+            <li>
+                <span>
+                    <a href="../store/store.html">
+                        <i class="fas fa-store"></i>
+                    </a>
+                </span>
+            </li>
+        </ul>
+    </nav>
+</header>
+       
+     
+
+
+  <!-- //AOS LIBRARY -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+
+      offset: 100,
+      duration: 800,
+
+
+
+    });
+
+    var btns = document.getElementsByClassName("navi");
+    const currentLocation = location.href;
+    for (var i = 0; i < btns.length; i++) {
+      if (btns[i].href === currentLocation) {
+        btns[i].className = 'active';
+      }
+    }
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 74) {
+            $('#navbar').addClass('nav-sticky');
+        } else {
+            $('#navbar').removeClass('nav-sticky');
+        }
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>
